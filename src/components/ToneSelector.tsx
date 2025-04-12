@@ -2,7 +2,7 @@
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { TooltipProvider, Tooltip, TooltipTrigger, TooltipContent } from "@/components/ui/tooltip";
-import { UK, US, Japan } from "lucide-react";
+import { Flag, Briefcase, Globe } from "lucide-react";
 
 type ToneSelectorProps = {
   value: string;
@@ -15,19 +15,19 @@ const ToneSelector = ({ value, onChange }: ToneSelectorProps) => {
       id: "british",
       label: "British",
       description: "Formal, polite and indirect communication style",
-      icon: UK,
+      icon: Flag,
     },
     {
       id: "american",
       label: "American",
       description: "Direct, friendly and results-oriented approach",
-      icon: US,
+      icon: Briefcase,
     },
     {
       id: "japanese",
       label: "Japanese",
       description: "Highly respectful with careful attention to hierarchy",
-      icon: Japan,
+      icon: Globe,
     },
   ];
 
